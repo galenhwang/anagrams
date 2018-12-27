@@ -11,7 +11,7 @@ Input | Output
 GBR  | United Kingdom of Great Britain and Northern Ireland
 IDN  | Indonesia
 IND  | India
-   
+
 As an extension, if the input is greater than 3 letters, consider it as the name of a country, and return the three-letter code for it. Write a helpful error message if the input is neither a valid code nor a country name.
 
 
@@ -20,7 +20,7 @@ As an extension, if the input is greater than 3 letters, consider it as the name
 By the end of this workshop you will:
 * Be familiar with how dictionaries can be used to store data (in this case words)
 * Have used a hash maps to store groupings of words which are anagrams
-* Be able to explain the limitations that some data structures face when working with large data sets 
+* Be able to explain the limitations that some data structures face when working with large data sets
 
 #### Aim
 For this workshop, you will be creating an Android app for a simple anagram game.
@@ -33,7 +33,7 @@ You'll notice that the workshop has 3 distinct milestones to complete the activi
 An anagram is a word formed by rearranging the letters of another word. For example, cinema is an anagram of iceman.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_C33CdeHgrc
-" target="_blank"><img src="http://img.youtube.com/vi/_C33CdeHgrc/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/_C33CdeHgrc/0.jpg"
 alt="Applied CS ArrayList" width="560" height="315" /></a>
 
 The mechanics of the game are as follows:
@@ -51,7 +51,7 @@ We have provided you with some [starter code](https://cswithandroid.withgoogle.c
 #### Tour of the Code
 The starter code is composed of two java classes:
 
-* AnagramsActivity: In Android development an Activity is a single, focused thing that the user can do. Most of our apps in this class will have a single activity but often apps are made up of multiple activities (e.g. login, settings, etc.). 
+* AnagramsActivity: In Android development an Activity is a single, focused thing that the user can do. Most of our apps in this class will have a single activity but often apps are made up of multiple activities (e.g. login, settings, etc.).
 The starter code implements several methods:
 
 	* 	onCreate: this method gets called by the system when the app is launched. It is made up of some boilerplate code plus code that opens the word list to initialize the dictionary and code to connect the text box to the processWord helper.
@@ -67,7 +67,7 @@ The starter code implements several methods:
 	* 	pickGoodStarterWord: Randomly selects a word with at least the desired number of anagrams.
 
 #### Milestone 1: Essentials
-The first milestone focuses on creating a very simply working program. You�ll be implementing the foundations which will in turn be built on in Milestones 2 and 3.
+The first milestone focuses on creating a very simply working program. You'll be implementing the foundations which will in turn be built on in Milestones 2 and 3.
 
 ##### AnagramDictionary
 We will start by implementing a simplified version of the game that has the user guess anagrams of the given word.
@@ -89,7 +89,7 @@ Unfortunately, the straight-forward strategy will be too slow for us to implemen
 
 As you process the input words, call sortLetters on each of them then check whether lettersToWord already contains an entry for that key. If it does, add the current word to ArrayList at that key. Otherwise, create a new ArrayList, add the word to it and store in the HashMap with the corresponding key.
 
-Once you have completed this, you have reached the end of Milestone 1! You�re now ready to move on the second milestone, where you�ll be adding more complexity to your program.
+Once you have completed this, you have reached the end of Milestone 1! You're now ready to move on the second milestone, where you'll be adding more complexity to your program.
 
 #### Milestone 2: Adding quality
 Milestone 2 is all about ensuring that the words picked are suitable for the anagram game. Just as the previous milestone, this one is split up into three sections.
@@ -129,7 +129,7 @@ If your game is working, proceed to implement pickGoodStarterWord to make the ga
 ##### Stop and Check
 
 <span style="background-color: #FBE9E7">Run your app again to make sure it's working.
-Two thirds of the way through! Just one milestone and the extension before you�re done.</span>
+Two thirds of the way through! Just one milestone and the extension before you're done.</span>
 
 #### Milestone 3: Refactoring
 At this point, the game is functional but can be quite hard to play if you start off with a long base word. To avoid this, let's refactor AnagramDictionary to give words of increasing length.
